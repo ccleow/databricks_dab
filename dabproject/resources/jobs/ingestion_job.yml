@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: ingestion
           notebook_task:
-            notebook_path: ../../src/notebooks/ingestion
+            notebook_path: ../../src/notebooks/ingestion.ipynb
             base_parameters:
               catalog_name: ${var.catalog_name}
             source: WORKSPACE
