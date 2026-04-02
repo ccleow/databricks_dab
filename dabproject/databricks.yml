@@ -27,7 +27,7 @@ targets:
     workspace:
       host: https://adb-7405612105794787.7.azuredatabricks.net
     variables:
-      catalog: cc_ws
+      catalog: ${var.catalog_name}
       schema: dev
   prod:
     mode: production
@@ -36,7 +36,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/chuncheck@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/chuncheck@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
-      catalog: cc_ws
+      catalog: ${var.catalog_name}
       schema: prod
     permissions:
       - user_name: chuncheck@gmail.com

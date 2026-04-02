@@ -1,0 +1,4 @@
+variables:
+  catalog_name:
+    description: Databricks Catalog Name
+    default: cc_ws
